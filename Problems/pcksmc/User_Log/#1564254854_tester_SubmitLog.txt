@@ -1,0 +1,7 @@
+【Submit#1564254854】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 04:14:14 2019
+    Problem : A
+    User : tester
+    Score : 0
+    Result : TLE

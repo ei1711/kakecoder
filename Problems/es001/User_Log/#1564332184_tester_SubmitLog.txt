@@ -1,0 +1,8 @@
+【Submit#1564332184】
+<Submit Information>
+    Submit Date and Time : Mon Jul 29 01:43:04 2019
+    Problem : A
+    Contestid：es001
+    User : tester
+    Score : 100
+    Result : AC

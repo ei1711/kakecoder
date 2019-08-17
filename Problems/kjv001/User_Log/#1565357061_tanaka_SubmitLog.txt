@@ -1,0 +1,8 @@
+【Submit#1565357061】
+<Submit Information>
+    Submit Date and Time : Fri Aug  9 22:24:21 2019
+    Problem : A
+    Contestid：kjv001
+    User : tanaka
+    Score : 0
+    Result : WA

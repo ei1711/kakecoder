@@ -1,0 +1,7 @@
+【Submit#1564320215】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 22:23:35 2019
+    Problem : C
+    User : masatosugiyama
+    Score : 0
+    Result : TLE

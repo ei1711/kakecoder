@@ -1,0 +1,8 @@
+【Submit#1564493959】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 22:39:19 2019
+    Problem : A
+    Contestid：pcksmc
+    User : earlgray293
+    Score : 0
+    Result : WA

@@ -1,0 +1,8 @@
+【Submit#1564392560】
+<Submit Information>
+    Submit Date and Time : Mon Jul 29 18:29:20 2019
+    Problem : A
+    Contestid：kgtca004
+    User : fff
+    Score : 0
+    Result : TLE

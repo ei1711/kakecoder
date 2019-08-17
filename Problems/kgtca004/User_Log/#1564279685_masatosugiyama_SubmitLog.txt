@@ -1,0 +1,7 @@
+【Submit#1564279685】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 11:08:05 2019
+    Problem : A
+    User : masatosugiyama
+    Score : 0
+    Result : WA

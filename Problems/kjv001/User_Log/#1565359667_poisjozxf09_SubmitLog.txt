@@ -1,0 +1,8 @@
+【Submit#1565359667】
+<Submit Information>
+    Submit Date and Time : Fri Aug  9 23:07:47 2019
+    Problem : B
+    Contestid：kjv001
+    User : poisjozxf09
+    Score : 0
+    Result : WA

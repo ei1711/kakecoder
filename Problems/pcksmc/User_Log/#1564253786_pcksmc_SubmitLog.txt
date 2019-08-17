@@ -1,0 +1,7 @@
+【Submit#1564253786】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 03:56:26 2019
+    Problem : A
+    User : pcksmc
+    Score : 100
+    Result : AC

@@ -1,0 +1,8 @@
+【Submit#1564404864】
+<Submit Information>
+    Submit Date and Time : Mon Jul 29 21:54:24 2019
+    Problem : C
+    Contestid：kgtca004
+    User : ttt
+    Score : 0
+    Result : WA

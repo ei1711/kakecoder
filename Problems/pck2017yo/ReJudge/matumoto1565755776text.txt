@@ -1,0 +1,27 @@
+submit
+1565755776
+matumoto
+pck2017yo
+B
+C(gnu11)
+#include<stdio.h>
+int main(void)
+{
+    int a,b,c;
+
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>=c){
+        printf("0\n");
+    }
+    else{
+        c=c-a;
+        if(c>b){
+            printf("NA\n");
+        }
+        else{
+            printf("%d\n",c);
+        }
+    }
+    return 0;
+}
+end

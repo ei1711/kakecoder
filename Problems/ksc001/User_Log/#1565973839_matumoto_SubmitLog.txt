@@ -1,0 +1,8 @@
+【Submit#1565973839】
+<Submit Information>
+    Submit now_time and Time : Sat Aug 17 01:43:59 2019
+    Problem : C
+    Contestid：ksc001
+    User : matumoto
+    Score : 0
+    Result : WA

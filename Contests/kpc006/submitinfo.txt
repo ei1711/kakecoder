@@ -1,0 +1,21 @@
+matumoto A 100 180 AC
+Nagura0520 A 100 240 AC
+hrk A 100 250 AC
+masatosugiyama A 100 260 AC
+nishihara A 100 480 AC
+takuma A 100 660 AC
+Nagura0520 B 200 900 AC
+masatosugiyama B 0 910 WA
+maasan A 100 1020 AC
+masatosugiyama B 0 1080 WA
+masatosugiyama B 0 1090 WA
+masatosugiyama B 0 1100 WA
+nishihara B 0 1380 WA
+maasan B 200 1440 AC
+hrk B 0 1620 WA
+matumoto B 0 1860 WA
+nishihara B 0 1980 WA
+nishihara B 0 2040 WA
+matumoto B 200 2100 AC
+shibataku B 200 2640 AC
+hrk B 0 2700 WAa D 0 6504 AC

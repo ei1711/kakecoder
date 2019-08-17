@@ -1,0 +1,8 @@
+【Submit#1566032569】
+<Submit Information>
+    Submit now_time and Time : Sat Aug 17 18:02:49 2019
+    Problem : D
+    Contestid：ksc001
+    User : poisjozxf09
+    Score : 400
+    Result : AC

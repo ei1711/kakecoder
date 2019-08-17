@@ -1,0 +1,365 @@
+AWSTATS DATA FILE 7.6 (build 20161204)
+# If you remove this file, all statistics for date 201908 will be lost/reset.
+# Last config file used to build this data file was /virtual/earlgray283c/public_html/log/awstats/cgi-bin/awstats.earlgray283c.s1008.xrea.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 30
+POS_GENERAL 2121                
+POS_TIME 2797                
+POS_VISITOR 9788                
+POS_DAY 9989                
+POS_DOMAIN 3458                
+POS_LOGIN 3705                
+POS_ROBOT 3860                
+POS_WORMS 4161                
+POS_EMAILSENDER 4292                
+POS_EMAILRECEIVER 4435                
+POS_SESSION 10195               
+POS_SIDER 10391               
+POS_FILETYPES 4570                
+POS_DOWNLOADS 4690                
+POS_OS 4738                
+POS_BROWSER 4932                
+POS_SCREENSIZE 5322                
+POS_UNKNOWNREFERER 5396                
+POS_UNKNOWNREFERERBROWSER 5510                
+POS_ORIGIN 5619                
+POS_SEREFERRALS 5759                
+POS_PAGEREFS 5903                
+POS_SEARCHWORDS 8772                
+POS_KEYWORDS 8924                
+POS_MISC 2461                
+POS_ERRORS 8983                
+POS_CLUSTER 3561                
+POS_SIDER_403 9107                
+POS_SIDER_400 9195                
+POS_SIDER_404 9277                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190816235852 22 5901 19287732452743
+FirstTime 20190811145541
+LastTime 20190816233129
+LastUpdate 20190817123936 0 0 0 0 0
+TotalVisits 30                  
+TotalUnique 2                   
+MonthHostsKnown 2                   
+MonthHostsUnknown 0                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 15 16 3327 1 3 3048
+1 76 76 73378 1 2 2526
+2 11 11 7111 7 7 2591
+3 1 1 479 1 1 0
+4 0 0 0 0 0 0
+5 1 1 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 11 11 13698 1 2 2315
+10 22 22 34177 6 6 7821
+11 15 15 28727 2 2 2655
+12 17 17 13487 7 7 10349
+13 137 145 80789 1 40 10654
+14 146 146 61411 13 24 18025
+15 66 66 84428 6 11 2421
+16 64 65 52899 1 3 2855
+17 10 10 15760 0 1 211
+18 33 33 37657 6 6 1358
+19 13 13 28137 3 3 4926
+20 51 52 66635 7 9 9685
+21 351 362 191047 12 59 33614
+22 114 115 91106 1 15 5464
+23 85 87 72772 46 58 12423
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 2
+com 1227 1252 932640
+jp 12 12 24385
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+twitterbot 12 26988 20190816141953 0
+favicon 8 19660 20190816135759 0
+no_user_agent 7 0 20190816191144 0
+Applebot/ 5 10620 20190816191141 0
+perl 1 2463 20190816145617 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+css 25 1044 0 0
+php 232 211754 0 0
+html 1007 744227 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 9
+linuxandroid 16 16
+ios_iphone 25 25
+linux 470 465
+win7 10 9
+macosx 88 83
+Unknown 3 0
+win10 636 625
+bsdopenbsd 1 1
+ios_ipad 15 15
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 19
+firefox50.0 1 1
+firefox52.4.0 1 1
+edge18 10 10
+safari12.0 1 1
+firefox52.0 1 1
+chrome76.0.3809.100 1053 1037
+firefox54.0 1 1
+safari12.1 36 34
+iphone 12 12
+firefox68.0 31 31
+mozilla 1 1
+firefox40.1 1 1
+firefox60.0 7 6
+chrome76.0.3809.111 12 12
+chrome46.0.2490.86 1 1
+firefox51.0.1 1 1
+chrome76.0.3809.89 13 13
+safari12.1.2 78 75
+Unknown 3 0
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+LibreOffice 20190814133520
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+LibreOffice 20190814133520
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 124 127
+From1 0 0
+From2 0 0
+From3 1114 1136
+From4 1 1
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 37
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/problems.html 121 121
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/pck2017yo/ranking.html 102 102
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/pck2017yo/problems.html 97 97
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/submit.html 96 96
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/pck2017yo/submit.html 77 77
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/ranking.html 77 77
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/problems.html 77 77
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/ 75 75
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/index.html 66 66
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/index.html 56 56
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/ranking.html 4 4
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com 1 1
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/submit.php 0 22
+https://t.co/H0o0gmjNLF 10 10
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/index.html 7 7
+https://t.co/3LbAD5SeOK 6 6
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/E.html 3 3
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv001/index.html 11 11
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv001/submit.html 13 13
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contest.html 24 24
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/submit.html 56 56
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/A.html 6 6
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/pck2017yo/index.html 21 21
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/D.html 6 6
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/F.html 5 5
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/B.html 6 6
+https://cp.xrea.com/site/detail/earlgray283c.s1008.xrea.com/ 2 2
+https://t.co/HlT6tgZUXo 4 4
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/ 1 1
+https://cards-dev.twitter.com/preview/html 1 1
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/Problems/C.html 1 1
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/Problems/A.html 7 7
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/Problems/B.html 43 43
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv002/Problems/C.html 19 19
+https://t.co/bbsSvuTYJo 5 5
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv001/problems.html 7 7
+https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/kjv001/Problems/A.html 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+403 9 1881
+206 24 30651
+301 3 770
+404 186 39908
+END_ERRORS
+
+# URL with 403 errors - Hits - Last URL referrer
+BEGIN_SIDER_403 1
+/ 9 -
+END_SIDER_403
+
+# URL with 400 errors - Hits - Last URL referrer
+BEGIN_SIDER_400 0
+END_SIDER_400
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 3
+/earlgray283c.s1008.xrea.com/index.html 1 http://earlgray283c.s1008.xrea.com/
+/index.html 1 -
+/earlgray283c.s1008.xrea.com/Contests/kjv002/index.html 2 https://ss1.xrea.com/earlgray283c.s1008.xrea.com/
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 2
+ss1.xrea.com 1227 1252 932640 20190816233129 20190816175332 /submit.php
+p179.net059084229.tokai.or.jp 12 12 24385 20190815230733
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 6
+20190811 116 116 119723 4
+20190812 262 269 222964 6
+20190813 48 49 36935 6
+20190814 347 356 188337 5
+20190815 10 10 23067 5
+20190816 456 464 365999 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 8
+5mn-15mn 1
+15mn-30mn 2
+0s-30s 13
+30s-2mn 3
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 39
+/submit.php 147 82661 1 0
+/Contests/ksc001/ranking.html 131 21826 0 0
+/Contests/kjv002/ranking.html 93 25232 6 4
+/Contests/pck2017yo/x.html 92 21706 0 2
+/ 92 141173 16 8
+/Contests/pck2017yo/ranking.html 89 14130 0 0
+/Contests/kjv002/ 78 91391 4 4
+/Contests/ksc001/x.html 74 7686 0 1
+/Contests/ksc001/ 54 76355 0 0
+/Contests/kjv002/problems.html 45 34367 0 1
+/Contests/kpc006/ 1 1750 0 0
+/Contests/ksc001/Problems/B.html 25 28705 0 1
+/Contest.html 26 24340 0 0
+/Contests/kjv002/Problems/F.html 7 10204 0 0
+/Contests/ksc001/submit.html 16 31066 0 0
+/Contests/kjv002/Problems/B.html 9 13664 0 0
+/Contests/kjv001/Problems/D.html 1 1693 0 0
+/Contests/kjv002/Problems/A.html 11 13329 0 0
+/Contests/ksc001/problems.html 38 39938 0 1
+/Contests/ksc001/Problems/A.html 16 23554 0 0
+/Contests/kjv001/submit.html 4 6582 0 0
+/Contests/ksc001/Problems/C.html 13 22798 0 0
+/Contests/kjv001/problems.html 10 11478 0 1
+/Contests/pck2017yo/ 36 58391 3 2
+/Contests/kjv002/submit.html 30 22429 0 0
+/Contests/kjv001/Problems/A.html 3 4425 0 0
+/Contests/kjv002/Problems/E.html 6 10145 0 0
+/Contests/kjv002/Problems/C.html 9 13591 0 0
+/Contests/kjv001/ 14 21247 0 0
+/Contests/sh00001/ 3 2699 0 2
+/Contests/kjv002/Problems/D.html 6 10169 0 0
+/Contests/pcksmc/ 1 1321 0 0
+/Contests/kpc007/ 2 3898 0 1
+/Contests/ksc001/Problems/D.html 12 27277 0 0
+/Contests/kjv001/Problems/B.html 1 1697 0 1
+/Contests/pck2017yo/problems.html 23 16816 0 0
+/Contests/pck2017yo/submit.html 17 14244 0 0
+/Contests/kjv001/ranking.html 2 1046 0 0
+/Contests/kjv002/x.html 2 958 0 0
+END_SIDER

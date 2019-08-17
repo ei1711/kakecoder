@@ -1,0 +1,16 @@
+submit
+1565755325
+kameisannn09
+pck2017yo
+A
+C(gnu11)
+#include<stdio.h>
+int main(void){
+    int n,m;
+    scanf("%d %d",&n,&m);
+    int sum=n+m;
+
+    printf("%d\n",sum/2);
+    return 0;
+}
+end

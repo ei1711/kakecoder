@@ -1,0 +1,8 @@
+【Submit#1564494326】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 22:45:26 2019
+    Problem : A
+    Contestid：pcksmc
+    User : earlgray293
+    Score : 100
+    Result : AC

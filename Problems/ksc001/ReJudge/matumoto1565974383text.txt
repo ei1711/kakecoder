@@ -1,0 +1,13 @@
+submit
+1565974383
+matumoto
+ksc001
+C
+C(gnu11)
+#include<stdio.h>
+int main(void)
+{
+printf("Even\n");
+return 0;
+}
+end

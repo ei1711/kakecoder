@@ -1,0 +1,8 @@
+【Submit#1565974472】
+<Submit Information>
+    Submit now_time and Time : Sat Aug 17 01:54:32 2019
+    Problem : C
+    Contestid：ksc001
+    User : tle_man
+    Score : 0
+    Result : WA

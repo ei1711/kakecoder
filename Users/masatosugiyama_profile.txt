@@ -1,0 +1,111 @@
+ykgtcb002z
+A Problem : AC
+ykgtcb002z
+B Problem : WA
+ykgtcb002z
+B Problem : WA
+ykgtcb002z
+B Problem : AC
+ykgtcb002z
+A Problem : AC
+ykgtcb002z
+B Problem : AC
+yrspcz
+A Problem : AC
+yrspcz
+B Problem : WA
+yrspcz
+B Problem : AC
+ykpc003z
+A Problem : AC
+ykpc003z
+B Problem : WA
+ykpc003z
+B Problem : WA
+ykpc003z
+B Problem : WA
+ykpc003z
+B Problem : WA
+ykpc003z
+B Problem : AC
+yrspcz
+C Problem : WA
+yrspcz
+C Problem : WA
+yrspcz
+C Problem : WA
+yrspcz
+C Problem : WA
+ykgtcb003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+ykgtca003z
+A Problem : WA
+yjoi2019z
+A Problem : WA
+yjoi2018z
+A Problem : WA
+yjoi2019z
+A Problem : WA
+yjoi2019z
+A Problem : WA
+ã€kgtca004ã€‘
+A Problem : AC
+ã€kgtca004ã€‘
+A Problem : AC
+ã€kgtca004ã€‘
+A Problem : WA
+ã€es001ã€‘
+A Problem : WA
+ã€es001ã€‘
+A Problem : AC
+ã€es001ã€‘
+B Problem : AC
+ã€es001ã€‘
+C Problem : TLE
+ã€es001ã€‘
+C Problem : TLE
+ã€es001ã€‘
+C Problem : TLE
+ã€es001ã€‘
+C Problem : TLE
+ã€es001ã€‘
+A Problem : AC
+ã€es001ã€‘
+C Problem : TLE
+ã€es001ã€‘
+C Problem : AC
+ã€es001ã€‘
+D Problem : AC
+ã€es001ã€‘
+E Problem : CE
+TLE
+ã€kgtcb002ã€‘
+A Problem : AC
+ã€kgtcb002ã€‘
+B Problem : WA
+ã€kgtcb002ã€‘
+B Problem : WA
+ã€kgtcb002ã€‘
+B Problem : AC
+ã€pcksmcã€‘
+A Problem : AC
+ã€pcksmcã€‘
+B Problem : AC
+ã€pcksmcã€‘
+C Problem : AC
+ã€kjv001ã€‘
+B Problem : WA
+ã€kjv001ã€‘
+B Problem : AC
+ã€kjv001ã€‘
+A Problem : AC

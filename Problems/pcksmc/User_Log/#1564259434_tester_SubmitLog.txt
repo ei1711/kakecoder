@@ -1,0 +1,7 @@
+【Submit#1564259434】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 05:30:34 2019
+    Problem : A
+    User : tester
+    Score : 0
+    Result : WA

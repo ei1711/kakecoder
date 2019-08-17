@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>提出する</title>
+    </head>
+
+    <body>
+        <script>
+            /*時間外アクセスを禁止するスクリプト*/
+
+            var date = new Date();
+            var unixtime = date.getTime();
+            unixtime = unixtime / 1000;
+
+            if ((1565956800 > unixtime)) {
+                alert("コンテスト時間外です。コンテストTOPへ遷移します。");
+                window.location.href = "https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/index.html";
+            }
+            if (1565618400 == unixtime) {/*コンテストを終了する時刻(UNIX時刻で)*/
+                alert("コンテストは終了しました。");
+                window.location.href = "https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/index.html";
+            }
+        </script>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3 mb-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/">KakeCoder</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contest.html">コンテスト</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+
+
+        <!--メインコンテンツ-->
+        <div class="container">
+            <div class="card" style="width: 1000px;">
+                <div class="card-body">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3 mb-3">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link"
+                                        href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/index.html">コンテストTOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/problems.html">問題一覧</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/submit.html">提出する</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/ranking.html">順位</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <form action="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/submit.php" method="POST"
+                    name="submit_form">
+                    <label>ユーザID：</label>
+                    <input name="userid" type="text" />
+                    <br><br>
+
+                    <label>コンテストID：</label>
+                    <input name="contestid" type="text" value="ksc001" />
+                    <br><br>
+
+                    <label>問題：</label>
+                    <select name="problem">
+                        <option value="A">A - Classification</option>
+                        <option value="B">B - String N -Ⅱ-</option>
+                        <option value="C">C - FULL POWER -Ⅱ-</option>
+                        <option value="D">D - Funny and Strategy Game</option>
+                    </select>
+
+                    <br><br>
+                    <label>言語：</label>
+                    <select name="language">
+                        <option value="C(gnu11)">C(gnu11)</option>
+                        <option value="C++(c++11)">C++(gnu11)</option>
+                        <!--
+                        <option value="Python2(ver2.7.5)">Python2(ver2.7.5)</option>
+                        <option value="Python3(ver3.6.8)">Python3(ver3.6.8)</option>
+                        -->
+                    </select>
+
+                    <br><br>
+                    <label>ソースコード：</label>
+                    <br>
+                    <textarea cols="60" name="sourcecode" rows="20"></textarea>
+
+                    <br>
+                    <input type="submit" value="送信" onclick="return checkform();">
+                    <div>
+                        <script>
+                            function checkform() {
+                                if (document.submit_form.userid.value == "" || document.submit_form.contestid.value == "" || document.submit_form.sourcecode.value == "") {
+                                    alert("ユーザIDもしくはソースコードが入力されていません。");
+                                    return false;
+                                } else {
+                                    //location.href='WaitForJudgging.php';
+                                    return true;
+                                }
+                            }
+                        </script>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

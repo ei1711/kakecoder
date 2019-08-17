@@ -1,0 +1,7 @@
+【Submit#1564320928】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 22:35:28 2019
+    Problem : C
+    User : masatosugiyama
+    Score : 200
+    Result : AC

@@ -1,0 +1,8 @@
+【Submit#1565153068】
+<Submit Information>
+    Submit Date and Time : Wed Aug  7 13:44:28 2019
+    Problem : B
+    Contestid：kgtca002
+    User : kameisannn09
+    Score : 0
+    Result : CE

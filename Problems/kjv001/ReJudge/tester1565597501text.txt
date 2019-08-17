@@ -1,0 +1,10 @@
+submit
+1565597501
+tester
+kjv001
+A
+C(gnu11)
+int main(){
+while(1);
+}
+end

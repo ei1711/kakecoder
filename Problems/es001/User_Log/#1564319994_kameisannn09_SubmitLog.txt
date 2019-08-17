@@ -1,0 +1,7 @@
+【Submit#1564319994】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 22:19:54 2019
+    Problem : A
+    User : kameisannn09
+    Score : 0
+    Result : TLE

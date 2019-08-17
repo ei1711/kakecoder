@@ -1,0 +1,8 @@
+【Submit#1565756450】
+<Submit Information>
+    Submit now_time and Time : Wed Aug 14 13:20:50 2019
+    Problem : C
+    Contestid：pck2017yo
+    User : kameisannn09
+    Score : 0
+    Result : WA

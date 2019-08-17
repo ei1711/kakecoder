@@ -1,0 +1,14 @@
+submit
+1565756890
+mason
+pck2017yo
+A
+C(gnu11)
+#include<stdio.h>
+int main(void){
+	int a,b,c;
+	scanf("%d %d",&a,&b);
+	c=(a+b)/2;
+	printf("%d",c);
+}
+end

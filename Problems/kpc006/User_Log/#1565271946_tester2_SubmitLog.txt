@@ -1,0 +1,8 @@
+【Submit#1565271946】
+<Submit Information>
+    Submit Date and Time : Thu Aug  8 22:45:46 2019
+    Problem : A
+    Contestid：kpc006
+    User : tester2
+    Score : 0
+    Result : CE

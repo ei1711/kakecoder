@@ -1,0 +1,16 @@
+submit
+1565755471
+matumoto
+pck2017yo
+A
+C(gnu11)
+#include<stdio.h>
+int main(void)
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    a=a+b;
+    printf("%d\n",a/2);
+    return 0;
+}
+end

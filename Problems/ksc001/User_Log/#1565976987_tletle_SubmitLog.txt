@@ -1,0 +1,8 @@
+【Submit#1565976987】
+<Submit Information>
+    Submit now_time and Time : Sat Aug 17 02:36:27 2019
+    Problem : A
+    Contestid：ksc001
+    User : tletle
+    Score : 0
+    Result : TLE

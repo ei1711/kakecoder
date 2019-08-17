@@ -1,0 +1,8 @@
+【Submit#1564494889】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 22:54:49 2019
+    Problem : A
+    Contestid：pcksmc
+    User : masatosugiyama
+    Score : 100
+    Result : AC

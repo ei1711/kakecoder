@@ -1,0 +1,8 @@
+【Submit#1564491460】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 21:57:40 2019
+    Problem : A
+    Contestid：es001
+    User : rrr
+    Score : 0
+    Result : TLE

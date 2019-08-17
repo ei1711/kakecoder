@@ -1,0 +1,8 @@
+【Submit#1565354770】
+<Submit Information>
+    Submit Date and Time : Fri Aug  9 21:46:10 2019
+    Problem : A
+    Contestid：kjv001
+    User : kameisannn09
+    Score : 100
+    Result : AC

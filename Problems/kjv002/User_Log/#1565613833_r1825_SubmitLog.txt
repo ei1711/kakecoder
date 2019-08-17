@@ -1,0 +1,8 @@
+【Submit#1565613833】
+<Submit Information>
+    Submit now_time and Time : Mon Aug 12 21:43:53 2019
+    Problem : F
+    Contestid：kjv002
+    User : r1825
+    Score : 0
+    Result : TLE

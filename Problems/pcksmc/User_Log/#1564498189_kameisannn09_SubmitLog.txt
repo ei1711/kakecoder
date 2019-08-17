@@ -1,0 +1,8 @@
+【Submit#1564498189】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 23:49:49 2019
+    Problem : B
+    Contestid：pcksmc
+    User : kameisannn09
+    Score : 0
+    Result : TLE

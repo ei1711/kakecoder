@@ -1,0 +1,8 @@
+【Submit#1564494378】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 22:46:18 2019
+    Problem : B
+    Contestid：kgtcb002
+    User : masatosugiyama
+    Score : 200
+    Result : AC

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>B - Happiness Number</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3 mb-3">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.kakecoder.shop/">KakeCoder</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://www.kakecoder.shop/">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.kakecoder.shop/Contest.html">コンテスト</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+
+
+        <!--メインコンテンツ-->
+        <div class="container">
+            <div class="card" style="width: 1000px;">
+                <div class="card-body">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3 mb-3">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="http://www.kakecoder.shop/Contests/KPC/kpc006/index.html">コンテストTOP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://www.kakecoder.shop/Contests/KPC/kpc006/problems.html">問題一覧</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://www.kakecoder.shop/Contests/KPC/kpc006/submit.html">提出する</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://www.kakecoder.shop/Contests/KPC/kpc006/ranking.html">順位</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <h3>B - Happiness Number　【配点：200点】</h3>
+                    
+                    
+                    <hr>
+                    <h4>問題文</h4>
+                    ポリアンナちゃんは幸せ探しが大好きです。<br>
+                    でも今日は雨。家の中で退屈なポリアンナちゃんは、数字の中から幸せを探すことにしました。<br>
+                    「X<sup>n</sup>+Y<sup>n</sup>=Z<sup>n</sup>が成り立つような自然数の組(X,Y,Z)は存在しない」ことを証明したりして幸せを探していましたが、最終的に幸せというのは次のような数のことをいうのだということを悟りました。<br><br>
+                    　・整数Xと整数Yで割り切ることができる数を幸せな数と呼ぶ。<br><br>
+                    幸せな数を求めてください。ただし、与えられる整数XとYは互いに素であることが保証されます。
+
+                    <br><br>
+                    <h4>制約</h4>
+                    ・1≦X≦Y≦10<sup>6</sup>
+
+                    <br><br>
+                    <h4>入力</h4>
+                    ・入力は以下の形式で標準入力から与えられる。<br>
+                    <span style="background-color: #c7c7c7;">X Y</span>
+
+                    <br><br>
+                    <h4>出力</h4>
+                    幸せな数を出力せよ
+
+                    <br><br>
+                    <h4>入力例1</h4>
+                    <span style="background-color: #c7c7c7;">3995 5793</span>
+
+                    <br><br>
+                    <h4>出力例1</h4>
+                    <span style="background-color: #c7c7c7;">23143035</span>
+
+                    <br><br>
+                    <h4>入力例2</h4>
+                    <span style="background-color: #c7c7c7;">776421 999799</span>
+
+                    <br><br>
+                    <h4>出力例2</h4>
+                    <span style="background-color: #c7c7c7;">776264939379</span>
+
+                    <br>
+                    出力が符号付32bit整数型ではオーバーフローするケースも存在することに気をつけてください。
+
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

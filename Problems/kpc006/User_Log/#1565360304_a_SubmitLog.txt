@@ -1,0 +1,8 @@
+【Submit#1565360304】
+<Submit Information>
+    Submit Date and Time : Fri Aug  9 23:18:24 2019
+    Problem : D
+    Contestid：kpc006
+    User : a
+    Score : 0
+    Result : AC

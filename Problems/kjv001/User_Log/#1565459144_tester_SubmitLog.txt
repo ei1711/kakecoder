@@ -1,0 +1,8 @@
+【Submit#1565459144】
+<Submit Information>
+    Submit now_time and Time : Sun Aug 11 02:45:44 2019
+    Problem : A
+    Contestid：kjv001
+    User : tester
+    Score : 0
+    Result : WA

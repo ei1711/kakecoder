@@ -1,0 +1,48 @@
+submit
+1565756450
+kameisannn09
+pck2017yo
+C
+C(gnu11)
+#include<stdio.h>
+int main(void){
+    int n;
+    scanf("%d",&n);
+    int sa;
+    if(n>=9){
+        sa=n-9;
+    }else{
+        sa=9-n;
+    }
+
+    int ans;
+    ans=sa%7;
+
+    if(ans==0){
+        printf("sat\n");
+    }
+    if(ans==1){
+        printf("fri\n");
+    }
+
+    if(ans==2){
+        printf("thu\n");
+    }
+
+    if(ans==3){
+        printf("wed\n");
+    }
+
+    if(ans==4){
+        printf("tue\n");
+    }
+    if(ans==5){
+        printf("mon\n");
+    }
+
+    if(ans==6){
+        printf("sun\n");
+    }
+    return 0;
+}
+end

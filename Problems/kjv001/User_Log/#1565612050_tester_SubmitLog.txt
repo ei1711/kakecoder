@@ -1,0 +1,8 @@
+【Submit#1565612050】
+<Submit Information>
+    Submit now_time and Time : Mon Aug 12 21:14:10 2019
+    Problem : A
+    Contestid：kjv001
+    User : tester
+    Score : 0
+    Result : CE

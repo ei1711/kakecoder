@@ -1,0 +1,8 @@
+【Submit#1565152331】
+<Submit Information>
+    Submit Date and Time : Wed Aug  7 13:32:11 2019
+    Problem : A
+    Contestid：kgtca002
+    User : kameisannn09
+    Score : 0
+    Result : WA

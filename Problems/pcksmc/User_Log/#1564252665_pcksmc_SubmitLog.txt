@@ -1,0 +1,7 @@
+【Submit#1564252665】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 03:37:45 2019
+    Problem : A
+    User : pcksmc
+    Score : 0
+    Result : TLE

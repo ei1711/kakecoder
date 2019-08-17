@@ -1,0 +1,8 @@
+【Submit#1564498188】
+<Submit Information>
+    Submit Date and Time : Tue Jul 30 23:49:48 2019
+    Problem : B
+    Contestid：pcksmc
+    User : kameisannn09
+    Score : 200
+    Result : AC

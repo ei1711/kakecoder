@@ -1,0 +1,8 @@
+submit
+1565976987
+tletle
+ksc001
+A
+C(gnu11)
+int main(){while(1);}
+end

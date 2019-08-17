@@ -1,0 +1,8 @@
+【Submit#1564404928】
+<Submit Information>
+    Submit Date and Time : Mon Jul 29 21:55:28 2019
+    Problem : C
+    Contestid：kgtca004
+    User : tttt
+    Score : 400
+    Result : AC

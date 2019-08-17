@@ -1,0 +1,8 @@
+【Submit#1565755452】
+<Submit Information>
+    Submit now_time and Time : Wed Aug 14 13:04:12 2019
+    Problem : A
+    Contestid：pck2017yo
+    User : kameisannn09
+    Score : 30
+    Result : AC

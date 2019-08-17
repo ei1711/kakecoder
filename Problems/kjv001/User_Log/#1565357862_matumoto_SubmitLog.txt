@@ -1,0 +1,8 @@
+【Submit#1565357862】
+<Submit Information>
+    Submit Date and Time : Fri Aug  9 22:37:42 2019
+    Problem : A
+    Contestid：kjv001
+    User : matumoto
+    Score : 100
+    Result : AC

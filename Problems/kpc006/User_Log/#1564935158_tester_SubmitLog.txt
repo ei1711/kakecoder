@@ -1,0 +1,8 @@
+【Submit#1564935158】
+<Submit Information>
+    Submit Date and Time : Mon Aug  5 01:12:38 2019
+    Problem : A
+    Contestid：kpc006
+    User : tester
+    Score : 0
+    Result : WA

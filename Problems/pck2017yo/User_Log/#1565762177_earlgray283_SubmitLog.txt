@@ -1,0 +1,8 @@
+【Submit#1565762177】
+<Submit Information>
+    Submit now_time and Time : Wed Aug 14 14:56:17 2019
+    Problem : G
+    Contestid：pck2017yo
+    User : earlgray283
+    Score : 0
+    Result : WA

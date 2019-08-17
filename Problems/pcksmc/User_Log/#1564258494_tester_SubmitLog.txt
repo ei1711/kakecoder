@@ -1,0 +1,7 @@
+【Submit#1564258494】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 05:14:54 2019
+    Problem : A
+    User : tester
+    Score : 100
+    Result : AC

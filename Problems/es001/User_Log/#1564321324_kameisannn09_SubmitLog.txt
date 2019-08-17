@@ -1,0 +1,7 @@
+【Submit#1564321324】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 22:42:04 2019
+    Problem : B
+    User : kameisannn09
+    Score : 100
+    Result : AC

@@ -1,0 +1,8 @@
+【Submit#1564499325】
+<Submit Information>
+    Submit Date and Time : Wed Jul 31 00:08:45 2019
+    Problem : E
+    Contestid：pcksmc
+    User : matumoto
+    Score : 0
+    Result : WA

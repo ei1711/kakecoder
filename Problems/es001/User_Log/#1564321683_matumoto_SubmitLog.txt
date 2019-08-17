@@ -1,0 +1,7 @@
+【Submit#1564321683】
+<Submit Information>
+    Submit Date and Time : Sun Jul 28 22:48:03 2019
+    Problem : E
+    User : matumoto
+    Score : 400
+    Result : AC

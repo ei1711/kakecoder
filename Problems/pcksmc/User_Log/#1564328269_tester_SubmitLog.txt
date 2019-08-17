@@ -1,0 +1,8 @@
+【Submit#1564328269】
+<Submit Information>
+    Submit Date and Time : Mon Jul 29 00:37:49 2019
+    Problem : A
+    Contestid：pcksmc
+    User : tester
+    Score : 0
+    Result : TLE

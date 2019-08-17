@@ -1,0 +1,62 @@
+ykgtca002z
+A Problem : CE
+ykgtca002z
+A Problem : WA
+ykgtca002z
+A Problem : CE
+ykgtca002z
+A Problem : AC
+ykgtca002z
+B Problem : AC
+ypcksmcz
+A Problem : CE
+ykgtca003z
+A Problem : AC
+ykgtca003z
+B Problem : WA
+ykgtca003z
+B Problem : CE
+ykgtca003z
+B Problem : AC
+ykgtca003z
+C Problem : WA
+ykgtca003z
+C Problem : CE
+ykgtca003z
+C Problem : WA
+ykgtca003z
+C Problem : AC
+ã€es001ã€‘
+A Problem : AC
+ã€es001ã€‘
+B Problem : AC
+ã€es001ã€‘
+C Problem : AC
+ã€es001ã€‘
+D Problem : AC
+ã€es001ã€‘
+E Problem : TLE
+ã€es001ã€‘
+E Problem : AC
+ã€pcksmcã€‘
+A Problem : AC
+ã€pcksmcã€‘
+B Problem : AC
+ã€pcksmcã€‘
+C Problem : AC
+ã€pcksmcã€‘
+D Problem : WA
+ã€pcksmcã€‘
+D Problem : WA
+ã€pcksmcã€‘
+E Problem : WA
+ã€pcksmcã€‘
+E Problem : WA
+ã€pcksmcã€‘
+E Problem : WA
+ã€kjv001ã€‘
+C Problem : AC
+ã€kjv001ã€‘
+A Problem : AC
+ã€kjv001ã€‘
+B Problem : AC

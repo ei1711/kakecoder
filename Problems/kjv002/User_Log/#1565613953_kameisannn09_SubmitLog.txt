@@ -1,0 +1,8 @@
+【Submit#1565613953】
+<Submit Information>
+    Submit now_time and Time : Mon Aug 12 21:45:53 2019
+    Problem : B
+    Contestid：kjv002
+    User : kameisannn09
+    Score : 0
+    Result : WA

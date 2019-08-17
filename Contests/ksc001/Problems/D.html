@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>C - Funny and Strategy Game</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3 mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/">KakeCoder</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contest.html">コンテスト</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <!--メインコン�?ン�?-->
+    <div class="container">
+        <div class="card" style="width: 1000px;">
+            <div class="card-body">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3 mb-3">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+                        aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                    href="http://www.kakecoder.shop/Contests/ksc007/index.html">コンテストTOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="http://www.kakecoder.shop/Contests/ksc007/problems.html">問題一覧</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="http://www.kakecoder.shop/Contests/ksc007/submit.html">提出する</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.kakecoder.shop/Contests/ksc007/ranking.html">順位</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h3>D - Funny and Strategy Game　【配点：300 点】</h3>
+
+
+                <hr>
+                <h4><strong>問題文</strong></h4>
+                あなたは matumoto くんはボードゲームをしています。<br>
+                そのボードゲームは横 N マスで構成される盤面上でコマを動かすゲームであり、あなたは親、matumoto くんはプレイヤーです。<br>
+
+                <br>
+                ゲームは次のように行います。<br>
+                　1. matumoto くんが左から X マス目にコマを配置する。<br>
+                　2. あなたが matumoto くんに対し、コマを最低でも動かなければならない回数 Y を告げる。<br>
+                　 ※ゴールするために Y 回では足りない場合は Y 回以上動かしても構わない。<br>
+                　3. ゲームを開始する。<br>
+                <br>
+                ゲームの条件は以下の通りです。<br>
+                　1. ゴール地点は左から N マス目である。<br>
+                　2. 最初にコマを動かす方向はゴール方向と決まっており、<br>
+                　　 方向転換が許されるのはゴール地点(N)に辿りついたときと左端(1)にたどり着いたときのみである。<br>
+                　3. matumoto くんのクリア条件は、このゲームを<strong>コマを動かした回数 ≧ Y</strong>を満たしてゴールすることである。<br>
+                <br>
+
+                matumoto くんがこのゲームをクリアするためにコマを動かさなければならない最小の回数を求めてください。<br>
+
+                <br>
+                <h4><strong>制約</strong></h4>
+                    ・2 ≦ N ≦ 10<sup>6</sup><br>
+                    ・1 ≦ X ≦ 10<sup>6</sup><br>
+                    ・0 ≦ Y ≦ 10<sup>9</sup><br>
+                    ・X ＜ N <br>
+
+                    <br>
+                    <h4><strong>入力</strong></h4>
+                    入力は以下の形式で標準入力から与えられる。<br>
+                    <span style="background-color:#c7c7c7">N</span><br>
+                    <span style="background-color:#c7c7c7">X Y</span><br>
+
+                    <br>
+                    <h4><strong>出力</strong></h4>
+                    matumoto くんがこのゲームをクリアするためにコマを動かさなければならない最小の回数を出力せよ<br>
+
+                    <br>
+                    <h4><strong>入力例1</strong></h4>
+                    <span style="background-color:#c7c7c7">5</span><br>
+                    <span style="background-color:#c7c7c7">2 5</span><br>
+                    <br>
+                    <h4><strong>出力例1</strong></h4>
+                    <span style="background-color:#c7c7c7">11</span><br>
+                    亀威くんのコマを■、空きマスを□、ゴールマスを G とすると初期状態は以下のようになります。<br>
+                    □■□□G<br>
+                    これを 1 コずつ進めていくと以下のようになります。<br>
+                    □□■□G １<br>
+                    □□□■G ２<br>
+                    □□□□■ ３<br>
+                    □□□■G ４<br>
+                    □□■□G ５<br>
+                    □■□□G ６<br>
+                    ■□□□G ７<br>
+                    □■□□G ８<br>
+                    □□■□G ９<br>
+                    □□□■G １０<br>
+                    □□□□■ １１<br>
+                    移動回数 11 回目でゴールマスにちょうどたどり着き、また 11≧Y を満たすので、<br>
+                    11 が親である進士くんの条件を満たしてゴールしたときの最小の移動数となります。<br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+【Submit#1565756023】
+<Submit Information>
+    Submit now_time and Time : Wed Aug 14 13:13:43 2019
+    Problem : B
+    Contestid：pck2017yo
+    User : earlgray283
+    Score : 40
+    Result : AC

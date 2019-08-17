@@ -1,0 +1,8 @@
+【Submit#1565759289】
+<Submit Information>
+    Submit now_time and Time : Wed Aug 14 14:08:09 2019
+    Problem : E
+    Contestid：pck2017yo
+    User : masatosugiyama
+    Score : 60
+    Result : AC
