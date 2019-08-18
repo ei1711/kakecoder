@@ -1,0 +1,9 @@
+
+【Submit#1111】
+《Submit Information》
+    Submit now_time and Time : Thu Jan  1 09:18:31 1970
+    Problem : A
+    Contest : ksc001
+    User : tester
+    Score : 0
+    Result : WA

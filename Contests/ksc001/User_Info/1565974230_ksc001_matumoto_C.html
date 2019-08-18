@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>KakeCoder</title>
+	    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css"/>
+	    <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	    <script>
+            jQuery(function($){
+       	        $.extend( $.fn.dataTable.defaults, {
+       		        language: { url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json" }
+			    });
+			    $("#result-table").DataTable({
+				    order:[[0,"desc"]]
+			    });
+		    });
+	    </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3 mb-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"
+            aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/index.html">KakeCoder</a>"
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/index.html">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contest.html">コンテスト</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    </body>
+    <body>
+<div class="container">        <div class="card" style="width: 1000px;">            <div class="card-body">                <nav class="navbar navbar-expand-sm navbar-light bg-light mt-3 mb-3">                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4"                        aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">                        <span class="navbar-toggler-icon"></span>                    </button>                    <div class="collapse navbar-collapse">                        <ul class="navbar-nav">                            <li class="nav-item active">                                <a class="nav-link"                                    href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/index.html">コンテストTOP</a>                            </li>                            <li class="nav-item">                                <a class="nav-link"                                    href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/problems.html">問題一覧</a>                            </li>                            <li class="nav-item">                                <a class="nav-link"                                    href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/submit.html">提出する</a>                            </li>                            <li class="nav-item">                                <a class="nav-link"                                    href="https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/ksc001/ranking.html">順位</a>                            </li>                        </ul>                    </div>                </nav>        <pre class="prettyprint default linenums">
+        #include<stdio.h>
+        int main(void)
+        {
+        int a[200],ai=0;
+        unsigned long long int x,ans=1;
+        scanf("%llu",&x);
+        while(x>0){
+        a[ai++]=x%10;
+        x/=10;
+        }
+        for(int i=0;i<ai;i++){
+        if(a[i]%2==0&&a[i]>0){
+        printf("Even\n");
+        return 0;
+        }
+        }
+        printf("Odd\n");
+        return 0;
+        }
+        </pre>
+        <table class="table table-bordered">
+            <thead>
+                <tr><th>テストケース</th><th>結果</th><th>実行時間</th>
+            </thead>
+            <tbody>
+                <tr><th>1.txt</th><th><span style="color:palegreen">AC</span></th>
+                <th>4[ms]</th></tr>
+                <tr><th>2.txt</th><th><span style="color:palegreen">AC</span></th>
+                <th>5[ms]</th></tr>
+                <tr><th>3.txt</th><th><span style="color:palegreen">AC</span></th>
+                <th>4[ms]</th></tr>
+                <tr><th>killer.txt</th><th><span style="color:orange">WA</span></th>
+                <th>4[ms]</th></tr>
+                <tr><th>killer2.txt</th><th><span style="color:orange">WA</span></th>
+                <th>4[ms]</th></tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered">
+            <tbody>
+                <tr><th>提出番号</th><th>#1565974230</th>
+                <tr><th>日時</th><th>Sat Aug 17 01:50:30 2019
+</th>
+                <tr><th>コンテストID</th><th>ksc001</th>
+                <tr><th>問題</th><th>C</th>
+                <tr><th>ユーザID</th><th>matumoto</th>
+               <tr><th>得点</th><th>0</th>
+               <tr><th>得点</th><th><span style="color:orange">WA</span></th></tr>
+            <div>
+        </tbody>
+    </table>
+</body>
+</html>

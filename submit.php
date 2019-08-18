@@ -53,7 +53,7 @@
                 system($command_str2);
             }
             echo "<br>";
-              
+            /*
             $fp3=fopen($_POST["userid"]."testcase.txt", "r");
             while ($line=fgets($fp3)) {
                 echo "$line<br>";
@@ -73,6 +73,9 @@
                 echo "$line<br>";
             }
             fclose($fp4);
+            */
+            $tmp="./show_source.out ".$_POST["contestid"];
+            system($tmp);
                   
             system("rm ".$_POST["userid"].$now_time."text.txt");
             system("rm ".$_POST["userid"]."log.txt");
@@ -82,6 +85,7 @@
             system("rm ".$_POST["userid"]."err.txt");
             system("rm "."x.txt");
             system("rm ".$_POST["userid"].".out");
+            
               
         ?>
 

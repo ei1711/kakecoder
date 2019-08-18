@@ -42,6 +42,8 @@ void output_result_log(user_t,int*);
 void make_scoretable(int*,user_t);
 void make_continfo(user_t*);
 void clean_up(user_t);
+
+void create_userinfo(user_t);
 //test
 int mysystem(char*);
 void kill_proc(char*);
@@ -62,6 +64,7 @@ int main(){
     scanf("%s",cmd);
     login(&ur);
 
+    create_userinfo(ur);
     make_scoretable(score_table,ur);
     make_continfo(&ur);
 
@@ -121,11 +124,11 @@ void input_source(user_t *ur) {
     sprintf(source_name,"%ssource.txt",ur->ID);
     if(!strcmp(ur->lang,"C(gnu11)")){
         //printf("gnu\n");
-        sprintf(copy_source_name, "./Problems/%s/User_Source/#%ld_%s_%s_%c.c", ur->contest_name,(long int)ur->now_time,ur->contest_name, ur->ID, ur->problem);
+        sprintf(copy_source_name, "./Problems/%s/User_Source/%ld_%s_%s_%c.c", ur->contest_name,(long int)ur->now_time,ur->contest_name, ur->ID, ur->problem);
         sprintf(zisage_command,"./zisage_c.out < %s %s",source_name,ur->ID);
         sprintf(make_file_command, "cp %ssource.c %s", ur->ID,copy_source_name);
     }else if(!strcmp(ur->lang,"C++(c++11)")){
-        sprintf(copy_source_name, "./Problems/%s/User_Source/#%ld_%s_%s_%c.cpp", ur->contest_name,(long int)ur->now_time,ur->contest_name, ur->ID, ur->problem);
+        sprintf(copy_source_name, "./Problems/%s/User_Source/%ld_%s_%s_%c.cpp", ur->contest_name,(long int)ur->now_time,ur->contest_name, ur->ID, ur->problem);
         sprintf(zisage_command,"./zisage_cpp.out < %s %s",source_name,ur->ID);
         sprintf(make_file_command, "cp %ssource.cpp %s", ur->ID,copy_source_name);
     }
@@ -198,6 +201,22 @@ void try_testcase(user_t *ur) {
         //printf("%d:%s\n",i+1,filename[i]);
     }
 
+    char tcfile_name[10000];
+        sprintf(tcfile_name,"./Contests/%s/User_Info/%ld_%s_%s_%c.html"
+            ,ur->contest_name,(long int)ur->now_time,ur->contest_name,ur->ID,ur->problem);
+
+        FILE *fp=fopen(tcfile_name,"a+");
+        fprintf(fp,"        <pre class=\"prettyprint default linenums\">\n");
+        for(int i=0;i<ur->source_end-1;i++){
+            fprintf(fp,"        %s\n",ur->source_code[i]);
+        }
+        fprintf(fp,"        </pre>\n");
+        fprintf(fp,"        <table class=\"table table-bordered\">\n");
+        fprintf(fp,"            <thead>\n");
+        fprintf(fp,"                <tr><th>テストケース</th><th>結果</th><th>実行時間</th>\n");
+        fprintf(fp,"            </thead>\n");
+        fprintf(fp,"            <tbody>\n");
+
     int cnt;
     for (cnt = 1; cnt <= list_end; cnt++) {
         char user_output1[10000];
@@ -253,41 +272,45 @@ void try_testcase(user_t *ur) {
             ur->testcase_result[cnt - 1] = 3;//CE
         }
 
-        char tcfile_name[10000];
-        sprintf(tcfile_name,"%stestcase.txt",ur->ID);
-
-        FILE *fp=fopen(tcfile_name,"a+");
-        fprintf(fp,"【%s】", filename[cnt-1]);
-
+        
+        fprintf(fp,"                <tr><th>%s</th>",filename[cnt-1]);
+        
+        //fprintf(fp,"【%s】", filename[cnt-1]);
+        /*
         if (!system_return) {
             fprintf(fp,"  process time : %d[ms]\n", time);
         }else if(system_return==2) {
             fprintf(fp,"  process time : %d[ms]\n",time);
         }
+        */
 
-        fprintf(fp,"  result : ");
+        //fprintf(fp,"  result : ");
         switch (ur->testcase_result[cnt - 1]) {
         case 0:
-            fprintf(fp,"AC\n");
+            fprintf(fp,"<th><span style=\"color:palegreen\">AC</span></th>\n");
             break;
         case 1:
-            fprintf(fp,"WA\n");
+            fprintf(fp,"<th><span style=\"color:orange\">WA</span></th>\n");
             ur->testcase_flg = 1;
             break;
         case 2:
-            fprintf(fp,"TLE\n");
+            fprintf(fp,"<th><span style=\"color:orange\">TLE</span></th>\n");
             ur->testcase_flg=2;
             break;
         case 3:
-            fprintf(fp,"CE\n");
+            fprintf(fp,"<th><span style=\"color:lightblue\">CE</span></th>\n");
             ur->testcase_flg = 3;
             break;
         default:
-            fprintf(fp,"Error\n");
+            fprintf(fp,"<th>Error</th></tr>\n");
         }
-        fclose(fp);
+        fprintf(fp,"                <th>%d[ms]</th></tr>\n",time);
+        
         remove(user_output2);
     }
+    fprintf(fp,"            </tbody>\n");
+    fprintf(fp,"        </table>\n");
+    fclose(fp);
 }
 
 int mysystem(char *test_command){
@@ -344,41 +367,55 @@ void kill_proc(char *str){
 void output_result_log(user_t ur, int *score_table) {
     char make_file[10000];
 
-    sprintf(make_file, "./Problems/%s/User_Log/#%ld_%s_SubmitLog.txt",ur.contest_name,(long int)ur.now_time, ur.ID);
+    sprintf(make_file,"./Contests/%s/User_Info/%ld_%s_%s_%c.html"
+        ,ur.contest_name,(long int)ur.now_time,ur.contest_name,ur.ID,ur.problem);
 
-    FILE *log_fp = fopen(make_file, "w+");
+    FILE *fp = fopen(make_file, "a");
 
-    fprintf(log_fp, "【Submit#%ld】\n", ur.now_time);
-    fprintf(log_fp, "<Submit Information>\n");
-    fprintf(log_fp, "    Submit now_time and Time : %s", ctime(&ur.now_time));
-    fprintf(log_fp, "    Problem : %c\n", ur.problem);
-    fprintf(log_fp, "    Contestid：%s\n",ur.contest_name);
-    fprintf(log_fp, "    User : %s\n", ur.ID);
+    fprintf(fp,"        <table class=\"table table-bordered\">\n");
+    fprintf(fp,"            <tbody>\n");
+    fprintf(fp,"                <tr><th>提出番号</th><th>#%ld</th>\n",(long int)ur.now_time);
+    fprintf(fp,"                <tr><th>日時</th><th>%s</th>\n",ctime(&ur.now_time));
+    fprintf(fp,"                <tr><th>コンテストID</th><th>%s</th>\n",ur.contest_name);
+    fprintf(fp,"                <tr><th>問題</th><th>%c</th>\n",ur.problem);
+    fprintf(fp,"                <tr><th>ユーザID</th><th>%s</th>\n",ur.ID);
+
+    //fprintf(log_fp, "【Submit#%ld】\n", ur.now_time);
+    //fprintf(log_fp, "<Submit Information>\n");
+    //fprintf(log_fp, "    Submit now_time and Time : %s", ctime(&ur.now_time));
+    //fprintf(log_fp, "    Problem : %c\n", ur.problem);
+    //fprintf(log_fp, "    Contestid：%s\n",ur.contest_name);
+    //fprintf(log_fp, "    User : %s\n", ur.ID);
 
     if (!ur.testcase_flg) {
-        fprintf(log_fp, "    Score : %d\n", score_table[ur.problem - 'A']);
+        fprintf(fp, "               <tr><th>得点</th><th>%d</th>\n", score_table[ur.problem - 'A']);
     }else {
-        fprintf(log_fp, "    Score : 0\n");  
+        fprintf(fp, "               <tr><th>得点</th><th>0</th>\n"); 
     }
 
-    fprintf(log_fp, "    Result : ");
+    fprintf(fp, "               <tr><th>得点</th>");
     switch (ur.testcase_flg) {
     case 0:
-        fprintf(log_fp, "AC\n");
+        fprintf(fp, "<th><span style=\"color:paregreen\">AC</span></th></tr>\n");
         break;
     case 1:
-        fprintf(log_fp, "WA\n");
+        fprintf(fp, "<th><span style=\"color:orange\">WA</span></th></tr>\n");
         break;
     case 2:
-        fprintf(log_fp,"TLE\n");
+        fprintf(fp,"<th><span style=\"color:orange\">TLE</span></th></tr>\n");
         break;
     case 3:
-        fprintf(log_fp, "CE\n");
+        fprintf(fp, "<th><span style=\"color:lightblue\">CE</span></th></tr>\n");
         break;
     default:
-        fprintf(log_fp, "Error\n");
+        fprintf(fp, "<th><CE/th></tr>\n");
     }
-    fclose(log_fp);
+    fprintf(fp,"            <div>\n");
+    fprintf(fp,"        </tbody>\n");
+    fprintf(fp,"    </table>\n");
+    fprintf(fp,"</body>\n");
+    fprintf(fp,"</html>\n");
+    fclose(fp);
 
     char logname[10000];
     sprintf(logname,"%slog.txt",ur.ID);
@@ -414,33 +451,33 @@ void output_result_log(user_t ur, int *score_table) {
 
     char tmp[10000];
     sprintf(tmp,"./Contests/%s/submitinfo.txt",ur.contest_name);
-    FILE *fp=fopen(tmp,"a+");
-    fprintf(fp,"%s %c ",ur.ID,ur.problem);
+    FILE *fp3=fopen(tmp,"a+");
+    fprintf(fp3,"%s %c ",ur.ID,ur.problem);
     if(!ur.testcase_flg){
-        fprintf(fp,"%d ",score_table[ur.problem-'A']);
+        fprintf(fp3,"%d ",score_table[ur.problem-'A']);
     }else{
-        fprintf(fp,"0 ");
+        fprintf(fp3,"0 ");
     }  
-    fprintf(fp,"%ld ",ur.now_time-ur.start_time);
+    fprintf(fp3,"%ld ",ur.now_time-ur.start_time);
 
     switch (ur.testcase_flg) {
     case 0:
-        fprintf(fp, "AC\n");
+        fprintf(fp3, "AC\n");
         break;
     case 1:
-        fprintf(fp, "WA\n");
+        fprintf(fp3, "WA\n");
         break;
     case 2:
-        fprintf(fp,"TLE\n");
+        fprintf(fp3,"TLE\n");
         break;
     case 3:
-        fprintf(fp, "CE\n");
+        fprintf(fp3, "CE\n");
         break;
     default:
-        fprintf(fp, "Error\n");
+        fprintf(fp3, "Error\n");
     }
 
-    fclose(fp);
+    fclose(fp3);
 }
 
 void clean_up(user_t ur) {
@@ -474,4 +511,98 @@ void make_continfo(user_t* ur){
         fscanf(fp,"%ld\n",&ur->start_time);
         fscanf(fp,"%ld\n",&ur->end_time);
     }
+}
+
+void create_userinfo(user_t ur){
+    char path_of_out[1000];
+    
+    sprintf(path_of_out,"./Contests/%s/User_Info/%ld_%s_%s_%c.html"
+        ,ur.contest_name,(long int)ur.now_time,ur.contest_name,ur.ID,ur.problem);
+    
+    FILE *fp=fopen(path_of_out,"w");
+    fprintf(fp,"<!DOCTYPE HTML>\n");
+    fprintf(fp,"<html lang=\"ja\">\n");
+    fprintf(fp,"    <head>\n");
+    fprintf(fp,"        <meta charset=\"utf-8\">\n");
+    fprintf(fp,"        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n");
+    fprintf(fp,"        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n");
+    fprintf(fp,"        <title>KakeCoder</title>\n");
+    fprintf(fp,"	    <link rel=\"stylesheet\" href=\"https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css\"/>\n");
+    fprintf(fp,"	    <script src=\"https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js\"></script>\n");
+    fprintf(fp,"        <script src=\"https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js\"></script>\n");
+    fprintf(fp,"	    <script>\n");
+    fprintf(fp,"            jQuery(function($){\n");
+	fprintf(fp,"       	        $.extend( $.fn.dataTable.defaults, {\n");
+	fprintf(fp,"       		        language: { url: \"http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json\" }\n");
+	fprintf(fp,"			    });\n");
+    fprintf(fp,"			    $(\"#result-table\").DataTable({\n");
+	fprintf(fp,"				    order:[[0,\"desc\"]]\n");
+    fprintf(fp,"			    });\n");
+	fprintf(fp,"		    });\n");
+    fprintf(fp,"	    </script>\n");
+    fprintf(fp,"    </head>\n");
+    fprintf(fp,"    <body>\n");
+    fprintf(fp,"        <nav class=\"navbar navbar-expand-sm navbar-dark bg-dark mt-3 mb-3\">\n");
+    fprintf(fp,"        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav4\"\n");
+    fprintf(fp,"            aria-controls=\"navbarNav4\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n");
+    fprintf(fp,"            <span class=\"navbar-toggler-icon\"></span>\n");
+    fprintf(fp,"        </button>\n");
+    fprintf(fp,"        <a class=\"navbar-brand\" href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/index.html\">KakeCoder</a>\"\n");
+    fprintf(fp,"        <div class=\"collapse navbar-collapse\">\n");
+    fprintf(fp,"            <ul class=\"navbar-nav\">\n");
+    fprintf(fp,"                <li class=\"nav-item active\">\n");
+    fprintf(fp,"                    <a class=\"nav-link\" href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/index.html\">ホーム</a>\n");
+    fprintf(fp,"                </li>\n");
+    fprintf(fp,"                <li class=\"nav-item\">\n");
+    fprintf(fp,"                    <a class=\"nav-link\"\n");
+    fprintf(fp,"                        href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contest.html\">コンテスト</a>\n");
+    fprintf(fp,"                </li>\n");
+    fprintf(fp,"            </ul>\n");
+    fprintf(fp,"        </div>\n");
+    fprintf(fp,"        </nav>\n");
+    fprintf(fp,"        <!-- Optional JavaScript -->\n");
+    fprintf(fp,"        <!-- jQuery first, then Popper.js, then Bootstrap JS -->\n");
+    fprintf(fp,"        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"\n");
+    fprintf(fp,"        integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\"\n");
+    fprintf(fp,"        crossorigin=\"anonymous\"></script>\n");
+    fprintf(fp,"        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\"\n");
+    fprintf(fp,"        integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\"\n");
+    fprintf(fp,"        crossorigin=\"anonymous\"></script>\n");
+    fprintf(fp,"        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\"\n");
+    fprintf(fp,"        integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\"\n");
+    fprintf(fp,"        crossorigin=\"anonymous\"></script>\n");
+
+    fprintf(fp,"    </body>\n");
+    fprintf(fp,"    <body>\n");
+    fprintf(fp,"<div class=\"container\">");
+    fprintf(fp,"        <div class=\"card\" style=\"width: 1000px;\">");
+    fprintf(fp,"            <div class=\"card-body\">");
+    fprintf(fp,"                <nav class=\"navbar navbar-expand-sm navbar-light bg-light mt-3 mb-3\">");
+    fprintf(fp,"                    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav4\"");
+    fprintf(fp,"                        aria-controls=\"navbarNav4\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">");
+    fprintf(fp,"                        <span class=\"navbar-toggler-icon\"></span>");
+    fprintf(fp,"                    </button>");
+    fprintf(fp,"                    <div class=\"collapse navbar-collapse\">");
+    fprintf(fp,"                        <ul class=\"navbar-nav\">");
+    fprintf(fp,"                            <li class=\"nav-item active\">");
+    fprintf(fp,"                                <a class=\"nav-link\"");
+    fprintf(fp,"                                    href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/%s/index.html\">コンテストTOP</a>",ur.contest_name);
+    fprintf(fp,"                            </li>");
+    fprintf(fp,"                            <li class=\"nav-item\">");
+    fprintf(fp,"                                <a class=\"nav-link\"");
+    fprintf(fp,"                                    href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/%s/problems.html\">問題一覧</a>",ur.contest_name);
+    fprintf(fp,"                            </li>");
+    fprintf(fp,"                            <li class=\"nav-item\">");
+    fprintf(fp,"                                <a class=\"nav-link\"");
+    fprintf(fp,"                                    href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/%s/submit.html\">提出する</a>",ur.contest_name);
+    fprintf(fp,"                            </li>");
+    fprintf(fp,"                            <li class=\"nav-item\">");
+    fprintf(fp,"                                <a class=\"nav-link\"");
+    fprintf(fp,"                                    href=\"https://ss1.xrea.com/earlgray283c.s1008.xrea.com/Contests/%s/ranking.html\">順位</a>",ur.contest_name);
+    fprintf(fp,"                            </li>");
+    fprintf(fp,"                        </ul>");
+    fprintf(fp,"                    </div>");
+    fprintf(fp,"                </nav>");
+    //fprintf(fp,"            </div>");
+    fclose(fp);
 }

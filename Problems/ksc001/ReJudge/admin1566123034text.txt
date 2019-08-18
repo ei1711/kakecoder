@@ -1,0 +1,8 @@
+submit
+1566123034
+admin
+ksc001
+A
+C(gnu11)
+int main(){}
+end

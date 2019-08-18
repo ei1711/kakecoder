@@ -1,33 +1,72 @@
-<style>
-table{
-   border-collapse:collapse;
-}
-td{
-   border:solid 1px;
-   padding:0.5em;
-}
-</style>
-<table>
-   <tr>
-       <td>RANK </td>
-       <td>ID </td>
-       <td>A </td>
-       <td>B </td>
-       <td>C </td>
-       <td>D </td>
-       <td>SCORE </td>
-   </tr>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css"/> 	<script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
+	<script>
+       jQuery(function($){
+       	$.extend( $.fn.dataTable.defaults, {
+       		language: { url: "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json" }
+			});
+			$("#ranking-table").DataTable({
+				order:[[0,"desc"]]
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<table id="ranking-table" class="table table-bordered">
+	<thead>
+	<tr><th>RANK</th>
+	<th>ID</th>
+       <th>A </th>
+       <th>B </th>
+       <th>C </th>
+       <th>D </th>
+       <th>SCORE </th>
+	</tr>
+	</thead>
+	<tbody>
    <tr>
        <td>1 </td>
-       <td>writer </td>
-       <td>100<br>       01:10<br>       (0) </td>
-       <td>200<br>       01:38<br>       (0) </td>
+       <td>earlgray283 </td>
+       <td>0<br>       86:14<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
        <td>300<br>       02:00<br>       (0) </td>
        <td>400<br>       02:14<br>       (0) </td>
-       <td>988.42 </td>
+       <td>688.42 </td>
    </tr>
    <tr>
        <td>2 </td>
+       <td>poisjozxf09 </td>
+       <td>100<br>       1211:02<br>       (0) </td>
+       <td>0<br>       1217:04<br>       (1) </td>
+       <td>300<br>       1217:14<br>       (12) </td>
+       <td>400<br>       1262:49<br>       (1) </td>
+       <td>501.50 </td>
+   </tr>
+   <tr>
+       <td>3 </td>
+       <td>writer </td>
+       <td>100<br>       01:10<br>       (0) </td>
+       <td>200<br>       01:38<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>290.10 </td>
+   </tr>
+   <tr>
+       <td>4 </td>
+       <td>tle_man </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>300<br>       292:26<br>       (1) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>148.57 </td>
+   </tr>
+   <tr>
+       <td>5 </td>
        <td>r1825 </td>
        <td>100<br>       01:04<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
@@ -36,16 +75,16 @@ td{
        <td>92.00 </td>
    </tr>
    <tr>
-       <td>3 </td>
+       <td>6 </td>
        <td>masatosugiyama </td>
-       <td>100<br>       03:49<br>       (0) </td>
+       <td>100<br>       03:49<br>       (2) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>84.87 </td>
    </tr>
    <tr>
-       <td>4 </td>
+       <td>7 </td>
        <td>mason </td>
        <td>100<br>       09:41<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
@@ -54,21 +93,76 @@ td{
        <td>75.90 </td>
    </tr>
    <tr>
-       <td>5 </td>
-       <td> </td>
+       <td>8 </td>
+       <td>kameisannn09 </td>
+       <td>100<br>       42:18<br>       (0) </td>
+       <td>0<br>       50:12<br>       (2) </td>
        <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>49.62 </td>
+   </tr>
+   <tr>
+       <td>9 </td>
+       <td>matumoto </td>
+       <td>100<br>       68:33<br>       (0) </td>
+       <td>0<br>       76:35<br>       (1) </td>
+       <td>0<br>       302:43<br>       (9) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>35.87 </td>
+   </tr>
+   <tr>
+       <td>10 </td>
+       <td>ttt </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>300<br>       1358:07<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>14.54 </td>
+   </tr>
+   <tr>
+       <td>11 </td>
+       <td>admin </td>
+       <td>0<br>       3117:21<br>       (15) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0.00 </td>
    </tr>
    <tr>
-       <td>5 </td>
-       <td>y </td>
-       <td>0<br>       29:22<br>       (1) </td>
+       <td>11 </td>
+       <td>eee </td>
+       <td>0<br>       276:58<br>       (1) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0<br>       00:00<br>       (0) </td>
        <td>0.00 </td>
    </tr>
+   <tr>
+       <td>11 </td>
+       <td>maasan </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       66:16<br>       (2) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0.00 </td>
+   </tr>
+   <tr>
+       <td>11 </td>
+       <td>rrr </td>
+       <td>0<br>       128:43<br>       (1) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0.00 </td>
+   </tr>
+   <tr>
+       <td>11 </td>
+       <td>tletle </td>
+       <td>0<br>       336:27<br>       (1) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0<br>       00:00<br>       (0) </td>
+       <td>0.00 </td>
+   </tr>
+	</tbody>
 </table>
